@@ -1,0 +1,195 @@
+/* CSS - Vars */
+
+:root {
+    --background-div: rgba(32,24,98,0.5);
+    --background-text: rgba(32,24,98);
+    --background-buttons: lawngreen;
+    --font: 'VT323', monospace;
+}
+
+
+/* CSS - Root */
+
+* {
+    /* border: 1px solid darkred; */
+    font-family: var(--font);
+    color: rgb(255, 255, 255);
+    font-size: small;
+    text-align: center;
+    cursor: url("Assets/gun-target.png") 32 32, auto;
+}
+
+/* CSS - Body */
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+
+/* CSS - Div - Left */
+
+#containerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-div);
+    background-size: cover;
+    width: 70%;
+    height: 70%;
+    margin-left: 4%;
+    margin-right: 2%;
+    border: 10px solid var(--background-buttons);
+    border-radius: 40px;
+}
+
+
+/* CSS - Div - Right */
+
+#containerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--background-div);
+    width: 30%;
+    height: 70%;
+    margin-left: 2%;
+    margin-right: 4%;
+    border: 10px solid var(--background-buttons);
+    border-radius: 40px;
+}
+
+
+/* CSS - Div - Left - User name page */
+
+#containerLeft div{
+    margin: 2%;
+}
+
+#user-name-data * {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#user-name-text-area{
+    padding: 0;
+    color: var(--background-text);
+    font-size: 35px;
+    width: 295px;
+}
+
+#user-name-text-area::placeholder{
+    color: red;
+    font-size: 30px;
+}
+
+#game-level-select{
+    padding: 0;
+    color: var(--background-text);
+    font-size: 35px;
+    width: 295px;
+    text-align-last: center;
+}
+
+#game-level-select option{
+    color: var(--background-text);
+    font-size: 25px;
+}
+
+/* CSS - Div - Left - Score page */
+
+#information-score{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#information-score div {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/* CSS - Div - Left - Score page */
+
+#random-div{
+    width: 98%;
+    height: 100%;
+}
+
+/* CSS - Div - Right - User Scores */
+
+#containerRight div{
+    margin: 2% 2% 0% 2%;
+    width: 100%;
+}
+
+#user-scores{
+    flex-grow: 1;
+    overflow: auto;
+    border-top: 5px solid var(--background-buttons);
+}
+
+#user-scores div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    margin: 5% 10% 5% 10%;
+}
+
+/* CSS - Style Buttons */
+
+.gameButtonsClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-buttons);
+    color: var(--background-text);
+    font-size: 45px;
+    width: 300px;
+    height: 50px;
+}
+
+/* CSS - h1 - h2 - h3 */
+
+h1 {
+    /* color: var(--background-buttons); */
+    margin: 0;
+    font-size: 75px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 60px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 45px;
+}
+
+h4 {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* UFO Image */
+
+#image-wrapper{
+    width: fit-content;
+    height: fit-content;
+}
+
+#stop-game-button{
+    height: 60px;
+    width: 80px;
+}

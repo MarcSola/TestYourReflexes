@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="Assets/ufo.png">
+    <title>Test Your Reflexes</title>
+</head>
+
+<body background="Assets/fondo.gif">
+    <!-- Container ALL LEFT -->
+    <div id="containerLeft">
+    </div>
+    <!-- Container ALL RIGHT -->
+    <div id="containerRight">
+        <div><h2>User Scores</h2></div>
+        <div id="user-scores">
+        </div>
+    </div>
+</body>
+
+<!-- Template user-logging -->
+<template id="user-logging-page">
+    <div><h1>Choose a user name</h1></div>
+    <div id="user-name-data">
+        <h3>User Name</h3>
+        <input id="user-name-text-area" type="text" maxlength="20">
+        <h3>Game Level</h3>
+        <select id="game-level-select" name="game-level" required>
+            <!-- List of game level -->
+            <option value="static">Static</option>
+            <option value="movement">Movement</option>
+            <option value="movement-insane">Movement Insane</option>
+        </select>
+    </div>
+    <div><button id="button-user-page" class="gameButtonsClass">Start</button></div> 
+</template>
+
+<!-- Template game-screen Start-->
+<template id="game-page">
+    <button id="start-game-button" class="gameButtonsClass">Start game</button>
+</template>
+
+<!-- Template final-score -->
+<template id="final-score-page">
+    <div id="information-score">
+        <div>
+            <h1>Your score</h1>
+        </div>
+        <div>
+            <h3>Your reaction time was:</h3>
+            <h3 id="score-data"></h3>
+        </div>
+        <div><button id="play-again-button" class="gameButtonsClass">Play again</button></div>
+    </div>
+</template>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</html>
